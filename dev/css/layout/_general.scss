@@ -1,3 +1,17 @@
 html {
   font-family: 'Roboto', sans-serif;
+  
+  .wrapper {
+    width: 50%;
+    margin: 0 auto;
+    @include desktop {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @include laptop {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
 }
