@@ -72,7 +72,116 @@ body {
 
       .right {
         height: 100%;
+        width: 100%;
         background: url('../../img/22-324x400.jpg') center/cover;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: end;
+
+        .redc {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+          background-color: $myRed;
+          padding: .4rem;
+          display: inline-block;
+          margin-left: 1rem;
+          font-size: 10px;
+        }
+
+        .seclink {
+          text-transform: uppercase;
+          font-weight: 900;
+          text-decoration: none;
+          color: white;
+          font-size: 10px;
+          align-self: start;
+          margin-top: .2rem;
+          margin-left: 1rem;
+          padding-right: 50%;
+        }
+      }
+    }
+
+    .menu {
+      border-top: 1px rgb(219, 219, 219) solid;
+      border-bottom: 1px rgb(219, 219, 219) solid;
+      margin-bottom: 1rem;
+      display: flex;
+    }
+  } 
+  // END OF HEADER
+  .first-newsblock {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 40% 1fr 1fr;
+    grid-template-rows: 1fr 35%;
+    gap: 1rem;
+    grid-template-areas: 
+    "vertical . ."
+    "vertical horizontal horizontal"
+    ;
+
+    img {
+      width: 100%;
+    }
+
+    .news {
+      border: 1px solid $borderColor;
+      height: 100%;
+      .image {
+        height: 60%;
+      }
+
+      .txt {
+        height: 40%;
+      }
+    }
+
+    
+    .news:nth-last-of-type(1) {
+      grid-area: horizontal;
+      display: flex;
+
+      .image {
+        height: 100%;
+        width: 50%;
+        background: url('../img/26-1068x712.jpg') center/cover;
+      }
+      .txt {
+        height: 100%;
+        width: 50%;
+        grid-template-rows: auto auto;
+        align-items: center;
+        .category {
+          align-self: end;
+        }
+        .newstitle {
+          align-self: start;
+        }
+      }
+    }
+    .news:nth-last-of-type(2) {
+      .image {
+        background: url('../img/23-1068x712.jpg') center/cover;
+      }
+    }
+    .news:nth-last-of-type(3) {
+      .image {
+        background: url('../img/18-1068x712.jpg') center/cover;
+      }
+    }
+    .news:nth-last-of-type(4) {
+      grid-area: vertical;
+      .image {
+        background: url('../img/27-1068x713.jpg') center/cover;
+        height: 75%;
+      }
+      .txt {
+        height: 20%;
       }
     }
   }

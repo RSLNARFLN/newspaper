@@ -13,5 +13,30 @@ html {
       margin: 0 auto;
     }
   }
-  
+}
+
+.news {
+  .txt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    .category {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $myRed;
+      font-weight: 900;
+      font-size: 14px;
+      padding: 1rem;
+    }
+
+    .newstitle {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 900;
+      padding: 0 1rem 1rem;
+      color: black;
+      font-size: 18px;
+    }
+  }
 }

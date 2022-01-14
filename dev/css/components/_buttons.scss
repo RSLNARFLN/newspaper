@@ -1,0 +1,24 @@
+.menu-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+  padding: 1rem;
+  
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+
+  &.last {
+    margin-left: auto;
+
+    &::after {
+      content: ' 💥';
+    }
+    &:hover {
+      color: $myRed;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
