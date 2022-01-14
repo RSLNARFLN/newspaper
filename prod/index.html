@@ -7,6 +7,7 @@
   <title>Newspaper</title>
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body class="wrapper">
 <!-- CONTENT HERE -->
@@ -115,18 +116,19 @@
     <div class="redband">
       Trending
     </div>
-    <div class="titles">
-      <a href="#" class="one-title">Bali Travel Experience: Combine Luxury with a Real Life Adventure</a>
-      <a href="#" class="one-title">A BREAKTHOUGH FOR THIS YEAR: SPACE TRAVEL MIGHT BECOME A THING</a>
-      <a href="#" class="one-title">EXOTIC TRIPS ARE GETTING MORE AND MORE POPULAR IN SOUTH AMERICA
-        OUT OF THIS WORLD EXPERIENCE WITH EXOTIC TRAVEL DESTINATIONS</a>
-      <a href="#" class="one-title">EXOTIC TRIPS ARE GETTING MORE AND MORE POPULAR IN SOUTH AMERICA
-        OUT OF THIS WORLD EXPERIENCE WITH EXOTIC TRAVEL DESTINATIONS
-        WORK OUT AS MUCH AS POSSIBLE DURING YOUR ALL INCLUSIVE VACATIONS</a>
-    </div>
-    <div class="next-prev">
-      <a href="#" class="btn-prev"></a>
-      <a href="#" class="btn-nxt"></a>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Bali Travel Experience: Combine Luxury with a Real Life Adventure</div>
+        <div class="swiper-slide">A BREAKTHOUGH FOR THIS YEAR: SPACE TRAVEL MIGHT BECOME A THING</div>
+        <div class="swiper-slide">EXOTIC TRIPS ARE GETTING MORE AND MORE POPULAR IN SOUTH AMERICA
+          OUT OF THIS WORLD</div>
+      </div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="btn-prev"></div>
+      <div class="btn-nxt"></div>
     </div>
   </div>
   <!-- MORE ARTICLE + STICKY -->
@@ -216,57 +218,60 @@
     </div>
     <!-- STICKY -->
     <div class="sticky">
-      <div>
-        <a href="#"><img src="img/rec2.webp" alt=""></a>
+      <div class="container">
+        <div>
+          <a href="#"><img src="img/rec2.webp" alt=""></a>
+        </div>
+        <div class="mustread">
+          <div class="mr-title">
+            Must read
+          </div>
+          <div class="articles">
+            <div class="art1">
+              <div class="left">
+                <!-- image -->
+              </div>
+              <div class="right">
+                <a href="#" class="category">Entertainment</a>
+                <a href="#" class="newstitle">BUZZ: MEGAN RYAN GETS AN EMMY AWARD ON HER 25 YEAR OLD BIRTHDAY</a>
+              </div>
+            </div>
+            <div class="art2">
+              <div class="left">
+                <!-- image -->
+              </div>
+              <div class="right">
+                <a href="#" class="category">Music</a>
+                <a href="#" class="newstitle">MUSIC IN YOUR HOME: PREMIUM SOUND SYSTEMS OFFER ASTOUNDING QUALITY</a>
+              </div>
+            </div>
+            <div class="art3">
+              <div class="left">
+                <!-- image -->
+              </div>
+              <div class="right">
+                <a href="#" class="category">Music</a>
+                <a href="#" class="newstitle">THESE GUYS ARE MAKING MORE MONEY THAN ANYBODY COULD HAVE EVER GUESSED</a>
+              </div>
+            </div>
+          </div>
+          <!-- BUTTONS -->
+          <div class="next-prev">
+            <a href="#" class="btn-prev"></a>
+            <a href="#" class="btn-nxt"></a>
+          </div>
+          <!-- STAY IN TOUCH -->
+          <div class="stayintouch">
+            <h2>STAY IN TOUCH</h2>
+            <p>
+              To be updated with all the latest news, offers and special announcements.
+            </p>
+            <input type="text" name="" id="" placeholder="Email address">
+            <a href="#" class="signup">Sign up</a>
+          </div>
+        </div>
       </div>
-      <div class="mustread">
-        <div class="mr-title">
-          Must read
-        </div>
-        <div class="articles">
-          <div class="art1">
-            <div class="left">
-              <!-- image -->
-            </div>
-            <div class="right">
-              <a href="#" class="category">Entertainment</a>
-              <a href="#" class="newstitle">BUZZ: MEGAN RYAN GETS AN EMMY AWARD ON HER 25 YEAR OLD BIRTHDAY</a>
-            </div>
-          </div>
-          <div class="art2">
-            <div class="left">
-              <!-- image -->
-            </div>
-            <div class="right">
-              <a href="#" class="category">Music</a>
-              <a href="#" class="newstitle">MUSIC IN YOUR HOME: PREMIUM SOUND SYSTEMS OFFER ASTOUNDING QUALITY</a>
-            </div>
-          </div>
-          <div class="art3">
-            <div class="left">
-              <!-- image -->
-            </div>
-            <div class="right">
-              <a href="#" class="category">Music</a>
-              <a href="#" class="newstitle">THESE GUYS ARE MAKING MORE MONEY THAN ANYBODY COULD HAVE EVER GUESSED</a>
-            </div>
-          </div>
-        </div>
-        <!-- BUTTONS -->
-        <div class="next-prev">
-          <a href="#" class="btn-prev"></a>
-          <a href="#" class="btn-nxt"></a>
-        </div>
-        <!-- STAY IN TOUCH -->
-        <div class="stayintouch">
-          <h2>STAY IN TOUCH</h2>
-          <p>
-            To be updated with all the latest news, offers and special announcements.
-          </p>
-          <input type="text" name="" id="" placeholder="Email address">
-          <a href="#" class="signup">Sign up</a>
-        </div>
-      </div>
+      
     </div>
   </section>
   <div class="interlude2">
@@ -518,6 +523,7 @@
       </div>
     </section>
   </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>
